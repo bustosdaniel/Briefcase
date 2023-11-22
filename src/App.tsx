@@ -1,15 +1,22 @@
-import { Box } from '@mui/material'
-import './App.css'
-import Profile from './profile'
-import Repositories from './repositories'
+import { Stack } from "@mui/material";
+import "./App.css";
+import Profile from "./profile";
+import Repositories from "./repositories";
 
 function App() {
   return (
-    <Box border='1px solid #c6c6c6' padding='24px' borderRadius='10px' >
+    <Stack
+      border="1px solid #c6c6c6"
+      padding="24px"
+      borderRadius="10px"
+      flexDirection="row"
+      alignItems="center"
+      justifyContent="space-between"
+    >
       <Profile />
       <Repositories />
-    </Box>
-  )
+    </Stack>
+  );
 }
 
-export default App
+export default App;
